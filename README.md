@@ -68,7 +68,7 @@ Cosine similarity is used to measure the similarity between two non-zero vectors
 ![Home Page](media/home_page.png)
 
 ### Recommendations Page
-![Recommendations Page](media/recommendations.mp4)
+![Recommendations Page](media/recommendations.gif)
 
 ## License
 
