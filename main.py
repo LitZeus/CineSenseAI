@@ -13,5 +13,5 @@ def get_suggestions():
     data = pd.read_csv('main_data.csv')
     return list(data['movie_title'].str.capitalize())
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
