@@ -1,12 +1,7 @@
 Flask
 gunicorn
 numpy
-scipy
 scikit-learn
 pandas
 beautifulsoup4
-jsonschema
-lxml
-urllib3
 requests
-pickleshare
