@@ -1,7 +1,7 @@
 Flask
 gunicorn==20.0.4
 Jinja2==2.11.3
-MarkupSafe==1.1.1
+MarkupSafe==2.1.5
 Werkzeug==0.15.5
 numpy>=1.9.2,<=1.22.0
 scipy>=0.15.1,<=1.7.3
@@ -15,4 +15,3 @@ html5lib==1.1
 urllib3==1.26.5
 requests==2.23.0
 pickleshare==0.7.5
-lxml==4.6.3 --only-binary :all:
