@@ -2,17 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "app.py",
+        "src": "index.py",
         "use": "@vercel/python",
-        "config": {
-          "installCommand": "apt-get update && apt-get install -y libxml2-dev libxslt-dev"
-        }
+        "config": {"runtime":"python3.9"}
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "app.py"
+        "dest": "/"
       }
     ]
   }
