@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "functions": {
+    "api/recommend": {
+      "memory": 512,
+      "maxDuration": 10
+    },
+    "api/reviews": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    { "src": "/recommend", "dest": "api/recommend.py" },
+    { "src": "/reviews", "dest": "api/reviews.py" },
+    { "src": "/(.*)", "dest": "app.py" }
+  ],
+  "includeFiles": [
+    "main_data.csv",
+    "nlp_model.pkl",
+    "tranform.pkl"
+  ],
+  "excludeFiles": [
+    "*.pyc",
+    "__pycache__/"
+  ]
+}
